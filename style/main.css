@@ -1,0 +1,90 @@
+/* #region Сброс минимум (минимальный) */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* #endregion Сброс минимум (минимальный) */
+
+/* #region Общее */
+/* .roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* #endregion Общее */
+
+/* #region section form */
+.section_form {
+    padding: 100px 0;
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section_form h2 {
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.section_form p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.section_form input,
+.section_form textarea,
+.section_form button {
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #5f5d5d;
+}
+
+.form_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_inner input {
+    width: 255px;
+    height: 50px;
+    padding: 18px 20px;
+}
+
+/* #endregion section form */
