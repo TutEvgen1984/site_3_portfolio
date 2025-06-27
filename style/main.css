@@ -90,7 +90,7 @@ body {
     height: 175px;
 
     /* Чтобы не было возможности изменять размер поля */
-    resize: none;
+    /* resize: inherit; */
 
     padding: 18px 20px;
     margin-bottom: 50px;
@@ -104,13 +104,18 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.15em;
     padding: 20px;
+    text-align: center;
 
     /* Чтобы отцентрировать кнопку нужно обязательно предварительно display: block потому что по умолчанию кнопка имеет inline-block*/
     display: block;
     margin: 0 auto;
+    cursor: pointer;
+    transition: 0.3s all;
 }
 
-
+.section_form button:hover {
+    opacity: 0.8;
+}
 
 .form_inner input {
     width: 255px;
