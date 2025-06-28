@@ -29,8 +29,10 @@ p {
 /* #region Общее */
 
 :root {
-  --accent: #34547a;
+  --color-accent: #34547a;
+  --color-silver: #eeeff1;
 }
+
 /* .roboto-<uniquifier> {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -60,14 +62,15 @@ body {
   min-height: 85px;
   flex-wrap: wrap;
   gap: 15px;
+  background-color: var(--color-silver);
 }
 
 .header--container {
   display: flex;
   justify-content: space-between;
-  max-width: 1500px;
+  max-width: 1148px;
   width: 100%;
-  padding: 20px 20px;
+  padding: 48px 20px;
   margin: 0 auto;
 
 }
@@ -87,7 +90,7 @@ body {
 }
 
 .header__logo:hover::after {
-  background-color: var(--accent);
+  background-color: var(--color-accent);
   width: 100%;
 }
 
@@ -96,7 +99,7 @@ body {
   font-family: "Revalia", sans-serif;
   font-weight: 400;
   font-size: 48px;
-  color: var(--accent);
+  color: var(--color-accent);
 }
 
 .header__logo--a:hover,
@@ -108,22 +111,24 @@ body {
 
 .header__nav ul {
   display: flex;
-  gap: 15px;
+  gap: 32px;
   list-style: none;
   padding-left: 0;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-right: 5px;
 }
 
 .header__nav--li-01 {}
 
 .header__nav-a {
+  text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 164%;
   letter-spacing: 0.1em;
-  color: var(--accent);
+  color: var(--color-accent);
 
   display: block;
   border-radius: 5px;
@@ -133,7 +138,7 @@ body {
 .header__nav-a:hover,
 .header__nav-a:focus {
 
-  background-color: var(--accent);
+  background-color: var(--color-accent);
   color: #fff;
 
 }
@@ -150,9 +155,9 @@ body {
 
 
 
-/* #region section form */
+/* #region section Form */
 .section_form {
-  background-color: #eeeff1;
+  background-color: var(--color-silver);
 }
 
 .section_form--container {
@@ -254,4 +259,18 @@ body {
 
 /* #endregion @media */
 
-/* #endregion section form */
+/* #endregion section Form */
+
+/* #region section First screen */
+.section_first-screen {}
+
+.first-screen--flex-group {}
+
+.first-screen--img {}
+
+.first-screen--right-group {}
+
+.first-screen--btn {}
+
+
+/* #endregion */
