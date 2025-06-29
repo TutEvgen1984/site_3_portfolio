@@ -236,6 +236,13 @@ body {
   text-transform: uppercase;
 
   background-color: var(--color-accent);
+  cursor: pointer;
+
+  transition: 0.3s all;
+}
+
+.first-screen--btn:hover {
+  transform: scale(110%);
 }
 
 /* #endregion section First screen */
@@ -244,7 +251,7 @@ body {
 .section_about-me {}
 
 .about-me--container {
-  min-height: 365px;
+  min-height: 367px;
   text-align: center;
   padding-top: 118px;
 }
@@ -257,10 +264,47 @@ body {
   margin: 0 auto;
 }
 
-
 /* #endregion section About-me */
 
+/* #region section Numbers */
+.section_numbers {
+  background-color: var(--color-accent);
+}
 
+.numbers--container {
+  display: flex;
+  justify-content: center;
+  padding: 96px 20px 95px;
+  gap: 50px;
+  margin-left: -20px;
+}
+
+.numbers--item {
+  display: flex;
+}
+
+.numbers--item__group {
+  padding-left: 20px;
+  padding-top: 6px;
+}
+
+.numbers--item__group h5 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 21px;
+  color: #fff;
+  padding-bottom: 1px;
+}
+
+.numbers--item__group p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 164%;
+  color: #fff;
+}
+
+/* #endregion section Numbers */
 
 /* #region section Form */
 .section_form {
