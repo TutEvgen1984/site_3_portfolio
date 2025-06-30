@@ -277,6 +277,7 @@ body {
   padding: 96px 20px 95px;
   gap: 50px;
   margin-left: -20px;
+  flex-wrap: wrap;
 }
 
 .numbers--item {
@@ -305,6 +306,61 @@ body {
 }
 
 /* #endregion section Numbers */
+
+/* #region section Skills */
+.section_skills {}
+
+.section_skills--container {
+  display: flex;
+  justify-content: center;
+  padding: 100px 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.section_skills--left-side {
+/*   padding: 20px; */
+/* display: relative; */
+}
+
+.h2--common {}
+
+.about-me--h2 {}
+
+.skills--item {}
+
+.paragraph--common {}
+
+.skills--p {}
+
+.skills-progressbar {
+  display: flex;
+  align-items: flex-start;
+}
+
+.skills-progresbar__fill {
+  background-color: var(--color-accent);
+  height: 4px;
+  width: 360px;
+}
+
+.skills-progresbar__empty {
+  background-color: #c4c4c4;
+  height: 4px;
+  width: 85px;
+}
+
+.section_skills--right-side {
+/*   padding: 20px; */
+}
+
+.skills--img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* #endregion section Skills */
 
 /* #region section Form */
 .section_form {
