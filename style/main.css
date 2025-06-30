@@ -319,8 +319,7 @@ body {
 }
 
 .section_skills--left-side {
-/*   padding: 20px; */
-/* display: relative; */
+  width: 445px;
 }
 
 .h2--common {}
@@ -335,23 +334,21 @@ body {
 
 .skills-progressbar {
   display: flex;
-  align-items: flex-start;
 }
 
 .skills-progresbar__fill {
   background-color: var(--color-accent);
   height: 4px;
-  width: 360px;
+  width: 70%;
 }
 
 .skills-progresbar__empty {
   background-color: #c4c4c4;
   height: 4px;
-  width: 85px;
+  width: 30%;
 }
 
 .section_skills--right-side {
-/*   padding: 20px; */
 }
 
 .skills--img {
