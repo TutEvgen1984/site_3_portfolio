@@ -66,7 +66,6 @@ body {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 32px;
-  text-align: center;
   color: #000;
 }
 
@@ -313,24 +312,28 @@ body {
 .section_skills--container {
   display: flex;
   justify-content: center;
-  padding: 100px 20px;
-  gap: 20px;
+  padding: 102px 20px;
+  gap: 147px;
   flex-wrap: wrap;
 }
 
 .section_skills--left-side {
   width: 445px;
+  /* margin-right: 200px; */
 }
 
-.h2--common {}
+.skills--h2 {
+  margin-top: 103px;
+  margin-bottom: 38px;
+}
 
-.about-me--h2 {}
+.skills--item {
+  margin-bottom: 28px;
+}
 
-.skills--item {}
-
-.paragraph--common {}
-
-.skills--p {}
+.skills--p {
+  margin-bottom: 11px;
+}
 
 .skills-progressbar {
   display: flex;
@@ -339,16 +342,17 @@ body {
 .skills-progresbar__fill {
   background-color: var(--color-accent);
   height: 4px;
-  width: 70%;
+  width: 79%;
 }
 
 .skills-progresbar__empty {
   background-color: #c4c4c4;
   height: 4px;
-  width: 30%;
+  width: 21%;
 }
 
 .section_skills--right-side {
+  /* margin-left: 200px; */
 }
 
 .skills--img {
@@ -359,9 +363,37 @@ body {
 
 /* #endregion section Skills */
 
+/* #region section Video */
+.section_video {}
+
+.section_video--container {
+  text-align: center;
+  background-color: var(--color-silver);
+  padding: 95px 20px 95px 20px;
+}
+
+.video--h2 {
+  margin-bottom: 38px;
+}
+
+.video--p {
+  margin-bottom: 49px;
+}
+
+/* Свойства постера для видео */
+.section_video__video[poster] {
+  /* Адаптивный постер видео */
+  width: 100%;
+  max-width: 1110px;
+}
+
+.section_video__video {}
+
+/* #endregion section Video */
+
 /* #region section Form */
 .section_form {
-  background-color: var(--color-silver);
+  /* background-color: var(--color-silver); */
 }
 
 .section_form--container {
