@@ -391,6 +391,39 @@ body {
 
 /* #endregion section Video */
 
+/* #region section Projects */
+.section_projects {
+}
+
+.projects--container {
+  padding-top: 29px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 480px));
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.projects--container:hover {
+
+}
+
+.projects__img {
+  /* чтобы наши изображения растягивались на всю область контейнера */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-fit работает примерно так же, как background-image, но для HTML-тегов img */
+}
+
+.projects__img::after {
+
+}
+
+
+/* #endregion section Projects */
+
+
+
 /* #region section Form */
 .section_form {
   /* background-color: var(--color-silver); */
