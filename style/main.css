@@ -51,6 +51,10 @@ p {
 }
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -90,9 +94,9 @@ body {
   padding: 48px 20px;
   margin: 0 auto;
   min-height: 165px;
+  flex-wrap: wrap;
 }
 
-.header__logo {}
 
 .header__logo::after {
   content: "";
@@ -160,14 +164,6 @@ body {
 
 }
 
-.header__nav--li-02 {}
-
-.header__nav--li-03 {}
-
-.header__nav--li-04 {}
-
-.header__nav--li-05 {}
-
 /* #endregion Header */
 
 /* #region section First screen */
@@ -223,8 +219,14 @@ body {
 }
 
 .first-screen--btn {
-  width: 225px;
-  height: 65px;
+  display: grid;
+  place-items: center;
+  max-width: 225px;
+  width: 100%;
+  min-height: 65px;
+  white-space: normal;
+  word-wrap: break-word;
+  text-decoration: none;
 
   font-family: var(--font-family);
   font-weight: 400;
@@ -402,10 +404,11 @@ body {
   /* grid-template-columns: repeat(4, 1fr); */
 
   /* сетка grid с центрированием, на краях пустое пространство, с автоперестройкой сетки */
-  /* grid-template-columns: repeat(auto-fit, minmax(120px, 480px)); */
+  grid-template-columns: repeat(auto-fit, minmax(120px, 480px));
 
   /* сетка grid с масштабированием под максимальную ширину, с автоперестройкой сетки */
-  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); */
+
   justify-content: center;
   transition: all 0.3s;
 }
@@ -469,12 +472,12 @@ body {
 }
 
 .clients__img {
-  /* align-self: center; */
+  /* адаптивность размеров изображений */
+  max-width: 100%;
+  height: auto;
 }
 
 /* #endregion section Clients */
-
-
 
 /* #region section Form */
 .section_form {
@@ -489,6 +492,7 @@ body {
 
   width: 100%;
   margin: 0 auto;
+  /* min-height: 765px; */
 }
 
 .section_form h2 {
@@ -581,3 +585,57 @@ body {
 /* #endregion @media */
 
 /* #endregion section Form */
+
+/* #region Footer */
+.footer {}
+
+.footer--container {
+  background-color: var(--color-accent);
+  min-height: 151px;
+  padding: 20px;
+}
+
+.footer--address {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1125px;
+  margin: 0 auto;
+  align-items: center;
+
+  font-style: normal;
+
+  padding-top: 29px;
+}
+
+.footer--creator {
+  margin-left: 9px;
+}
+
+.footer--creator h3 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 21px;
+  color: #fff;
+  margin-bottom: 13px;
+}
+
+.footer--creator p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 164%;
+  color: #fff;
+}
+
+.footer--socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+  flex-wrap: wrap;
+
+  margin-right: -8px;
+  margin-top: -5px;
+
+}
+
+/* #endregion Footer */
